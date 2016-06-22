@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecom", "Repositories\Ecom.csproj", "{AB408A60-AD24-4D8B-8A7B-2DBF10AAC351}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecom", "Ecom\Ecom.csproj", "{AB408A60-AD24-4D8B-8A7B-2DBF10AAC351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECom.DataModel", "Repositories.DataModel\ECom.DataModel.csproj", "{6E1AF8D0-A04C-474A-96D3-7D7601C35CEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECom.DataModel", "ECom.DataModel\ECom.DataModel.csproj", "{6E1AF8D0-A04C-474A-96D3-7D7601C35CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
