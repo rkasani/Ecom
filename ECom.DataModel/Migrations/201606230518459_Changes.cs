@@ -3,7 +3,7 @@ namespace ECom.DataModel.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class Changes : DbMigration
     {
         public override void Up()
         {

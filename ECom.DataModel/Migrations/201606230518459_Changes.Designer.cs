@@ -7,13 +7,13 @@ namespace ECom.DataModel.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class Changes : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Changes));
         
         string IMigrationMetadata.Id
         {
-            get { return "201606221303263_InitialCreate"; }
+            get { return "201606230518459_Changes"; }
         }
         
         string IMigrationMetadata.Source
