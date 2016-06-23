@@ -7,7 +7,8 @@
 
     public class EcomContext : DbContext
     {
-        public EcomContext() : base("name=EcomEntities") { }
+        public EcomContext() : base("name=EcomEntities")
+        { }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Customer> Customers { get; set; }
