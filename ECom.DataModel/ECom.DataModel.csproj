@@ -53,9 +53,9 @@
     <Compile Include="Category.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="EcomContext.cs" />
-    <Compile Include="Migrations\201606230518459_Changes.cs" />
-    <Compile Include="Migrations\201606230518459_Changes.Designer.cs">
-      <DependentUpon>201606230518459_Changes.cs</DependentUpon>
+    <Compile Include="Migrations\201606280720079_Version4.cs" />
+    <Compile Include="Migrations\201606280720079_Version4.Designer.cs">
+      <DependentUpon>201606280720079_Version4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PriceTag.cs" />
@@ -68,8 +68,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201606230518459_Changes.resx">
-      <DependentUpon>201606230518459_Changes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606280720079_Version4.resx">
+      <DependentUpon>201606280720079_Version4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
