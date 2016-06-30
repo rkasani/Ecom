@@ -1,12 +1,8 @@
 ﻿namespace Ecom.DataModel
 {
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
+   
     /// <summary>
     /// Gives the category of identity
     /// </summary>
@@ -22,7 +18,13 @@
         /// Gets or Sets the CategoryName
         /// </summary>
         public string CategoryName { get; set; }
+        
+        /// <summary>
+        /// Gets Or sets the product Id
+        /// </summary>
+        public int ProductId { get; set; }
 
-        public IEnumerable<Product> Products { get; set; }
+        public virtual Product Product { get; set; }
+        
     }
 }

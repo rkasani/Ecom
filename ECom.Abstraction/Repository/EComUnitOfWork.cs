@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
-
 using Ecom.DataModel;
-using ECom.DataModel;
 using System.Transactions;
+using ECom.DataModel;
+using ECom.Dto;
 
 namespace ECom.Abstraction.Repository
 {
@@ -23,13 +23,15 @@ namespace ECom.Abstraction.Repository
         private GenericRepository<ProductImage> _productImageRepository;
         private GenericRepository<PriceTag> _priceTagRepository;
         private GenericRepository<Product> _productRepository;
+        
+        
         #endregion
 
         public EComUnitOfWork()
         {
             context = new DataModel.EcomContext();
             context.Configuration.ProxyCreationEnabled = false;
-            //context.Configuration.LazyLoadingEnabled = false;
+            //context.Configuration.LazyLoadingEnabled = true;
             context.Database.CommandTimeout = 300;
         }
         protected virtual void Dispose(bool disposing)

@@ -16,6 +16,7 @@
         public DbSet<PriceTag> PriceTags { get; set; }
         public DbSet<Product> Products { get; set; }
 
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 

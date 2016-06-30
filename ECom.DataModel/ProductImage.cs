@@ -1,5 +1,6 @@
 ﻿namespace Ecom.DataModel
 {
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     /// <summary>
     /// Class regarding the Image of Product
@@ -14,7 +15,7 @@
         /// <summary>
         /// Gets or Sets the Mapping productId
         /// </summary>
-        public Product ProductId { get; set; }
+        public int ProductId { get; set; }
         /// <summary>
         /// Gets or Sets the Image Name or Unique name
         /// </summary>
@@ -28,5 +29,6 @@
         /// </summary>
         public int OrderOfImage { get; set; }
 
+        public virtual Product Product { get; set; }
     }
 }

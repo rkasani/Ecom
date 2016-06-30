@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Ecom.DataModel
 {
@@ -15,7 +17,7 @@ namespace Ecom.DataModel
         /// <summary>
         /// Gets or Sets customerID
         /// </summary>
-        public Customer CustomerID { get; set; }
+        public int CustomerID { get; set; }
         /// <summary>
         /// Gets or Sets Address as line 1 
         /// Mandatory field
@@ -44,6 +46,8 @@ namespace Ecom.DataModel
         /// <summary>
         /// Gets or Sets the following address is current
         /// </summary>
-        public bool IsCurrentAddress { get; set; }
+        public bool IsCurrentAddress { get; set; }    
+        
+        public virtual Customer Customer { get; set; }    
     }
 }

@@ -46,7 +46,7 @@
         /// </summary>
         public bool IsDeleted { get; set; }
 
-        public ICollection<Address> ShippingAddress { get; set; }
+        public ICollection<Address> Addresses { get; set; }
 
     }
 }

@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Linq.Expressions;
     using System.Text;
     using ECom.DataModel;
     using System.Data.Entity;
@@ -39,7 +40,7 @@
         }
 
         public T Get(Func<T, bool> predicate)
-        {
+        {            
             return DbSet.First(predicate);
         }
 
@@ -51,6 +52,12 @@
             }
 
             return DbSet.AsEnumerable();
+        }
+        public IQueryable<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = context.Set<T>();
+
+            return includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
         }
     }
 }
